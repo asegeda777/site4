@@ -1,1 +1,705 @@
 /* You can add global styles to this file, and also import other style files */
+
+// body
+body{
+    margin: 0;
+    width: 1440px;
+}
+
+// header
+.header{
+    background: url(img/header.png)center no-repeat;
+    height: 691px;
+    background-size: cover;
+}
+
+.header-menu-logo{
+    display: inline-block;
+    font-size: 33.333px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+
+    background: #ffba00;
+
+    padding: 10px 10px 10px 50px;
+    margin: 20px auto 20px 20px;
+    box-shadow: -35px 0px 0px 0px  #ffba00;
+}
+
+.header-menu-item {
+    font-size: 33.333px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 3.125;
+
+    text-transform: capitalize;
+    text-decoration: none;
+
+    margin: 0 30px;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu > nav{
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-right: 150px;
+}
+
+// header-center-style
+.header-center-style{
+    width: 100%;
+    height: 250px;
+
+    background-color: #ffba00;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 150px;
+}
+
+// header-title
+.header-title {
+    font-size: 125px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.833;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title > *{
+    margin: 20px 50px 20px 0;
+}
+
+// read-more-btn
+.btn-style{
+    font-size: 30.444px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    background: #ffba00;
+    border: white solid 3px;
+    padding: 20px 20px 20px 50px;
+
+    margin: auto auto 0 auto;
+
+    position: relative;
+    top: 20%;
+}
+
+// news
+.news{
+    background: #242424;
+
+    padding: 80px 0 50px 80px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.news-content{
+    margin-left: 50px;
+}
+
+.box-yellow{
+    background:  #ffba00;
+    box-shadow: -50px 0px 0px 0px  #ffba00;
+}
+
+.box-yellow::after{
+    box-shadow: 100px 0px 0px 0px  #ffba00;
+}
+
+.news-ante-title{
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: right;
+
+    writing-mode: tb-rl;
+    transform:rotate(180deg);
+
+    position: relative;
+    top: 60px;
+}
+
+.news-title{
+    font-size: 41.667px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+
+    letter-spacing: 10px;
+}
+  
+.news-text > span, .news-text > * > span{
+    font-size: 41.667px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+
+    display: inline-block;
+}
+
+.news-text > span::before, .news-text > * > span::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 50px;
+    background-color: white;
+    top: 100%;
+    position: relative;
+    top: 50px;
+    left: -20px;
+}
+
+// news-image
+.news-image{
+    background: url(img/news.png) right no-repeat;
+    width: 621px;
+    height: 444px;
+    display: inline-block;
+    margin: auto 0 auto auto;
+}
+
+// features
+.features{
+    padding: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-item{
+    width: 300px;
+    height: 150px;
+}
+
+.features-item-title{
+    font-size: 29.245px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 186, 0);
+    line-height: 1.14;
+}
+
+.features-item-title::before{
+    display: inline-block;
+
+    height: 30px;
+    color: rgb(255, 186, 0);
+    padding-right: 10px;
+}
+
+.features-item-title-number-1::before{
+    content: "I"
+}
+
+.features-item-title-number-2::before{
+    content: "II"
+}
+
+.features-item-title-number-3::before{
+    content: "III"
+}
+
+.features-item-text{
+    text-align: justify;
+}
+
+// menu
+.menu{
+    background: url(img/menu.png) center no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+}
+
+// menu-text
+.menu-text{
+    margin: 100px 0 100px 500px ;
+}
+
+.menu-title{
+    font-size: 62.5px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: rgb(255, 186, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    padding: 30px 250px 100px;
+    border: white solid 3px;
+    margin: 0 auto;
+}
+
+// menu-text-item
+.menu-text-item{
+    color: white;
+}
+
+.lol{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-text-item-title{
+    
+    font-size: 41.667px;
+    font-family: "Lato";
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.menu-text-item-title::before{
+
+    height: 30px;
+    padding-right: 20px;
+}
+
+.menu-text-item-title-1::before{
+    content: "I";
+}
+
+.menu-text-item-title-2::before{
+    content: "II";
+}
+
+.menu-text-item-title-3::before{
+    content: "III";
+}
+
+.menu-text-item-price{
+    font-size: 33.333px;
+    font-family: "Lato";
+    line-height: 1.625;
+    font-weight: 900;
+
+    text-align: right;
+}
+
+.menu-text-item-recipe{
+    font-size: 41.667px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    font-weight: 500;
+
+    margin-right: 50px;
+}
+
+// menu-legend
+.menu-legend{
+    font-size: 25px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+
+    font-weight: 400;
+
+    border: white solid 3px;
+    padding: 30px 500px 30px 150px;
+    margin: 100px auto 50px;
+}
+
+// about-us
+.about-us{
+    background: #242424;
+    
+    padding: 100px 250px;
+}
+
+.about-us-title{
+    font-size: 62.5px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: rgb(255, 186, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    
+}
+
+.about-us-text{
+    font-size: 18.75px;
+    font-family: "Raleway";
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 1.778;
+    text-align: center;
+
+    margin: 50px 0;
+}
+
+.about-us > nav{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 250px;
+}
+
+.about-us > nav > *{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    font-size: 16.667px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+// masterclass
+.masterclass{
+    background: url(img/masterclass.png) center no-repeat;
+    background-size: cover;
+    padding: 200px 100px 500px 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.masterclass > p{
+    color: white;
+    text-align: right;
+    margin: 0;
+}
+
+.masterclass-ante-title{
+    font-size: 41.667px;
+    font-family: "Lato";
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    padding-bottom: 50px;
+}
+
+.masterclass-main-text{
+    background: rgb(255, 186, 0);
+    
+    width: 540px;
+    height: 630px;
+    
+    padding: 50px;
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.masterclass-title{
+    
+    font-size: 50px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    padding-left: 20px;
+}
+
+.masterclass-title::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    top: 57px;
+    left: -20px;
+}
+
+.masterclass-title::after{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    top: 8px;
+    left: 20px;
+}
+
+.masterclass-text{
+    font-size: 41.667px;
+    font-family: "Lato";
+    font-weight: 900;
+
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+
+    padding: 50px 0;
+}
+
+.masterclass-date-time{
+    font-size: 41.667px;
+    font-family: "Lato";
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.6;
+
+    text-align: right;
+}
+
+.masterclass-date-time > p{
+    margin: 0;
+}
+
+.masterclass-post-title{
+    text-align: left;
+    text-decoration: none;
+
+    font-size: 41.667px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    background: rgb(255, 186, 0);
+
+    padding: 50px 150px 50px 50px;
+}
+
+// gallery
+.gallery{
+    background: #242424;
+
+    background-image: url(img/gallery-bg.png);
+    // background-size: auto auto;
+    
+    display: flex;
+    flex-direction: column;
+
+    padding: 100px 50px;
+}
+
+// .gallery::before{
+//     content: "";
+//     display: block;
+//     width: 5px;
+//     height: 50px;
+//     background-color: white;
+//     top: 100%;
+//     position: relative;
+//     top: 50px;
+//     left: -20px;
+// }
+
+.gallery-title{
+    font-size: 41.667px;
+    font-family: "Montserrat";
+    font-weight: 900;
+    color: rgb(255, 186, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    margin: 0 auto;
+    height: fit-content;
+}
+
+// .gallery-title::before{
+//     content: "";
+//     display: block;
+//     width: 5px;
+//     height: 50px;
+//     background-color: white;
+//     top: 100%;
+//     position: relative;
+//     top: 50px;
+//     left: -20px;
+// }
+
+// gallery-img
+.gallery-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-img-item-1{
+    background: url(img/gallery-img-1.png) center no-repeat;
+    height: 475px;
+    width: 390px;
+}
+
+.gallery-img-item-2{
+    background: url(img/gallery-img-2.png) center no-repeat;
+    height: 475px;
+    width: 317px;
+}
+
+.gallery-img-item-3{
+    background: url(img/gallery-img-3.png) center no-repeat;
+    height: 475px;
+    width: 712px;
+}
+
+.gallery-content-text{
+    font-size: 25px;
+    font-family: "Lato";
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+
+    width: 360px;
+}
+
+.gallery-content-text > p{
+    text-align: right;
+    text-decoration: none;
+
+}
+
+.gallery-logo{
+    display: inline-block;
+    font-size: 33.333px;
+    font-family: "Montserrat";
+    color: #ffba00;
+    line-height: 1.2;
+}
+
+.gallery-logo-white{
+    display: inline-block;
+    font-size: 33.333px;
+    font-family: "Montserrat";
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+
+    margin: 100px auto;
+}
+
+.gallery-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-content-social > nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 260px;
+}
+
+.gallery-content-social-title{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery-content-social-title::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 50px;
+    background-color: white;
+    top: 100%;
+    position: relative;
+    top: 50px;
+    left: -20px;
+}
+
+.gallery-content-social-item{
+    background: white;
+    color: #242424;
+    
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+
+    display: flex;
+    text-decoration: none;
+}
+
+.gallery-content-social-item > *{
+    margin: auto;
+}
+
+// footer
+.footer{
+    background: #483500;
+    font-size: 18.75px;
+    font-family: "Lato";
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 1.556;
+    text-transform: uppercase;
+
+    padding: 100px;
+}
+
+.footer{
+    display: grid;
+    grid-template-areas:
+    "about menu shef contact"
+    "text nav-1 nav-2 nav-3";
+}
+
+.footer-about{
+    grid-area: about;
+    font-weight: 700;
+}
+
+.footer-menu{
+    grid-area: menu;
+    font-weight: 700;
+}
+
+.footer-shef{
+    grid-area: shef;
+    font-weight: 700;
+}
+
+.footer-contact{
+    font-weight: 700;
+    grid-area: contact;
+}
+
+.footer-nav-1{
+    grid-area: nav-1;
+}
+
+.footer-nav-1 > p{
+    margin: 0;
+}
+
+.footer-nav-2{
+    grid-area: nav-2;
+}
+
+.footer-nav-2 > p{
+    margin: 0;
+}
+
+.footer-nav-3{
+    grid-area: nav-3;
+}
+
+.footer-nav-3 > p{
+    margin: 0;
+}
+
+.footer-text{
+    text-transform: capitalize;
+    grid-area: text;
+    width: 400px;
+}
